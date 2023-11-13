@@ -4,28 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;
+0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
     <title>Weather-forcast</title>
   </head>
   <body>
-
+<div class="Weather-forcast">
     <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
+      <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city..." required 
+         class="search-input"  id="search-input"/>
+        <input type="submit" value="search" class="submit-button" />
       </form>
     </header>
     <main>
+      <div class="weather-app-data">
       <div>
-        <h1>Lagos</h1>
-        <p>
-          Saturday 16:56, partly cloudy
+        <h1 class="lagos-city" id="city">Lagos</h1>
+        <p class="weather-details">
+          Monday 16:56, partly cloudy
           <br />
-          Humidity: 75%, Wind: 16km/h
+          Humidity: <strong >74%</strong>, Wind: <strong>2.0km/h </strong>
         </p>
       </div>
-      <div>⛅31°C</div>
-    </main>
+      <div class="weather-app-container">
+      <div class="weather-icon">⛅</div>
+        <div class="weather-temperature">31</div>
+        <div class="weather-unit">°C</div>
+      
+      </div>
+        
+      </div>
+    </main> 
     <footer>
+      This project was built by
       <a href="https://github.com/Bisluv/" target="_blank">
         Akangbe Kafilat Bisola,</a
       >
@@ -38,6 +54,7 @@
         hosted on Netlify
       </a>
     </footer>
-    
+</div>
+<script src="script.js"></script>
   </body>
 </html>
