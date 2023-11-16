@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-    <link rel= "stylesheet" href= "style.css" />
-    <script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather-forcast</title>
   </head>
   <body>
-    <div class="Weather-forcast">
+    <div class="weather">
       <header>
         <form class="search-form" id="search-form">
           <input
@@ -33,7 +33,8 @@
               <span id="time"></span>
               <span id="description"></span>
               <br />
-              Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind"></strong> </strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind"> </strong>
             </p>
           </div>
           <div class="weather-app-container">
@@ -42,59 +43,8 @@
             <div class="weather-unit">°C</div>
           </div>
         </div>
-        <div class="weather-forecast">
-          <div class="forecast-day">
-            <div class="forecast-date">Mon</div>
-            <div class="forecast-icon">🌤️</div>
-            <div class="forecast-temperatures">
-              <div class="forecast-temperature">
-                <strong>12º</strong>
-              </div>
-              <div class="weather-forecast-temperature">9º</div>
-            </div>
-          </div>
-          <div class="forecast-day">
-            <div class="forecast-date">Tue</div>
-            <div class="forecast-icon">🌤️</div>
-            <div class="forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>23º</strong>
-              </div>
-              <div class="weather-forecast-temperature">8º</div>
-            </div>
-          </div>
-          <div class="forecast-day">
-            <div class="forecast-date">Wed</div>
-            <div class="forecast-icon">🌤️</div>
-            <div class="forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>15º</strong>
-              </div>
-              <div class="weather-forecast-temperature">9º</div>
-            </div>
-          </div>
-          <div class="forecast-day">
-            <div class="forecast-date">Thurs </div>
-            <div class="forecast-icon">🌤️</div>
-            <div class="forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>15º</strong>
-              </div>
-              <div class="weather-forecast-temperature">5º</div>
-            </div>
-          </div>
-          <div class="forecast-day">
-            <div class="forecast-date">Fri</div>
-            <div class="forecast-icon">🌤️</div>
-            <div class="forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>19º</strong>
-              </div>
-              <div class="weather-forecast-temperature">5º</div>
-            </div>
-          </div>
-        </div>
-      </main> 
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
 
       <footer>
         This project was built by
